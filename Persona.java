@@ -1,17 +1,19 @@
 package personas;
 
+
 public class Persona {
 
-	private String nombre;
-	private int edad;
+	protected String nombre;
+	protected int edad;
 	
 	
 	public Persona() {
 		nombre = "Anónimo";
 		edad = 18;
 	}
+	
 
-
+	
 	public Persona(String nombre, int edad) {
 		this.nombre = nombre;
 		this.edad = edad;
@@ -36,4 +38,11 @@ public class Persona {
 	public void setEdad(int edad) {
 		this.edad = edad;
 	}
+
+	public String toString(){
+	
+		return "Persona[Nombre=" + nombre + ", Edad=" edad + "]";
+
+	}
+
 }
